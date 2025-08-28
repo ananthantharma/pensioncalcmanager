@@ -71,8 +71,8 @@ def calc_db_lifetime_and_bridge(
 # Streamlit app
 # ------------------------------
 st.set_page_config(page_title="DB vs DC Retirement Model — Interactive", layout="wide")
-st.title("DB vs DC Retirement Model — Interactive")
-st.caption("Educational model: simplifies some pension mechanics (YMPE, indexing caps, taxes). Adjust assumptions to explore sensitivity.")
+st.title("Ananthan's Career Defining Decision - DB vs DC Retirement Model")
+
 
 with st.sidebar:
     st.header("Profile & Dates")
@@ -424,3 +424,4 @@ with tab3:
         "DB indexing (% of CPI)": f"{index_fraction_cpi:.0%}",
     }
     st.dataframe(pd.DataFrame.from_dict(snapshot, orient="index", columns=["Value"]))
+
